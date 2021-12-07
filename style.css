@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  margin: -1rem;
+  height: 6rem;
+  padding-top: 1rem;
+}
+.header {
+  display: flex;
+  margin-left: 5rem;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 0.5rem;
+}
+button {
+  display: none;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 4rem;
+}
+li {
+  margin: 0.5rem 3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+.nav-links {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    margin-left: -2rem;
+    margin-top: 1rem;
+  }
+  ul {
+    display: none;
+  }
+  button {
+    display: flex;
+    background: transparent;
+    border: transparent;
+    margin-right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .nav-links {
+    display: grid;
+    height: 40vh;
+    width: 100vw;
+    margin-left: -0.5rem;
+    background-color: blanchedalmond;
+  }
+  .nav-links > ul {
+    display: grid;
+    justify-content: center;
+  }
+  .nav-links > ul > li {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}
